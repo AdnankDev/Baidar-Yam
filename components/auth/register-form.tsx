@@ -58,8 +58,9 @@ export const RegisterForm = ()=>{
                                 <Input 
                                     {...field}
                                     placeholder="Name"
-                                    type="name"/>
-                                    disabled={isPending}
+                                    type="name"
+                                    disabled={isPending}/>
+                                    
                                     <FieldError>{fieldState.error?.message}</FieldError>
                             </Field>
                         )}>
@@ -102,7 +103,7 @@ export const RegisterForm = ()=>{
                      </Controller>
                     <FormError messege={error}/>
                     <FormSuccess messege={success}/>
-                     <Button className="w-full" disabled={isPending}>Create Account</Button>
+                     <Button className="w-full cursor-pointer" disabled={isPending}>Create Account</Button>
                 </form>
 
         </CardWrapper>
