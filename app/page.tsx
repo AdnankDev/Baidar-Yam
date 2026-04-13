@@ -2,6 +2,7 @@ import { Big_Shoulders, Poppins } from "next/font/google"; // Use Display for ti
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { LoginButton } from "@/components/auth/login-button";
+import SignIn from "@/components/signin";
 
 const fontPoppin = Poppins({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function Home() {
             <LoginButton mode="redirect">
               <Button variant={"secondary"} size={"lg"} className={cn("px-6 py-2.6 cursor-pointer", fontPoppin.className)}>Sign In</Button>
             </LoginButton>
+            <SignIn/>
           </div>
         </div>
     </main>
